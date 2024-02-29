@@ -1,0 +1,100 @@
+*{
+            font-family:"poppins", sans-serif;
+            margin:0; padding:0;
+            box-sizing:border-box;
+            outline: none; border: none;
+            text-decoration:none;
+            text-transform: capitalize;
+        }
+
+        .container{
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 7%;
+            background: #ac588c;
+            min-height: 50vh;
+            gap: 15px;
+            padding-bottom: 80px;
+        }
+
+        .container .content{
+            flex:1 1 400px;
+        }
+
+        .container .image{
+            flex:1 1 400px;
+        }
+
+        .container .image img{
+            width:45%;
+        }
+
+        .container .content .title{
+            font-size: 40px;
+            text-transform: uppercase;
+            color:#610f56;
+        }
+
+        .container .content .p{
+            color:#f700b9;
+            padding: 5px 0;
+        }
+
+        .container .content .count-down{
+            display: flex;
+            gap:95px;
+            padding: 10px 0;
+        }
+
+        .container .content .count-down .box{
+            padding: 5px;
+            background: #fff;
+            border: 1px solid plum;
+            text-align: center;
+            flex:1 1 10px;
+        }
+
+        .container .content .count-down .box h3{
+            font-size: 50px;
+            color: plum;
+        }
+
+        .container .content .count-down .box span{
+            color:#fff;
+            font-size: 20px;
+            padding: 5px 0;
+        }
+
+        @media (max-width:500px){
+            .container{
+                padding: 20px;
+            }
+
+            .container .content{
+                text-align: center;
+            }
+
+            .container .content .title{
+                font-size: 35px;
+            }
+
+            .container .content p{
+                font-size: 14px;
+            }
+
+            .container .content .count-down{
+                gap: 5px;
+            }
+
+            .container .content .count-down .box h3{
+                font-size: 30px;
+            }
+
+            .container .content .count-down .box span{
+                font-size: 15px;
+            }
+        }
+
+    
+        

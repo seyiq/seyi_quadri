@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3 class="title">DESIGNER SERIES BAG GIVEAWAY</h3>
+            <div style="letter-spacing: 1px;">
+                <strong><i>ESTIMATED TIME REMAINING 7 DAYS</i></strong><br>
+               1.FOLLOW @CarleyKnoboloch on instagram<br>
+               2.Follow @hrm_shayyy on instagram<br>
+               3.Tag the friend you'd share a perfectly<br>
+               blended margarita with this summer on <br>
+                @CarleyKnoboloch's instagram post<br>
+                <div class="count-down">
+                    <div class="box">
+                        <h3 id="day">00</h3>
+                        <span>day</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="hours">00</h3>
+                        <span>hours</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="minutes">00</h3>
+                        <span>minutes</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="seconds">00</h3>
+                        <span>seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="WipeOut43_15_2021_024340.366000.jpg">
+            </div>     
+    </div>
+    
+    <script>
+        let countDate = new Date("feb 28,2024 00:00:00").getTime();
+    
+        function countDown(){
+    
+            let now = new Date().getTime();
+            let gap = now-countDate;
+    
+            let second = 1000;
+            let minute = second * 60;
+            let hour = minute * 60;
+            let day = hour * 24;
+    
+            let d = Math.floor(gap / (day));
+            let h = Math.floor((gap % (day)) / (hour));
+            let m = Math.floor((gap % (hour)) / (minute));
+            let s = Math.floor((gap % (minute)) / (second));
+    
+            document.getElementById("day").innerText = d;
+            document.getElementById("hours").innerText = h;
+            document.getElementById("minutes").innerText = m;
+            document.getElementById("seconds").innerText = s;
+        }
+    
+        setInterval(function(){
+            countDown();
+        },1000)
+    </script>   
+
+
+</body>
+</html>
